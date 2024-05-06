@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.service import Service
 @pytest.fixture()
 def browser():
     options = webdriver.ChromeOptions()
+    options.add_argument('--headless')
     options.add_experimental_option("detach", True)
     g = Service()
     driver = webdriver.Chrome(options=options, service=g)
