@@ -13,10 +13,11 @@ jobs:
       - name: setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: "3.9"
       - name: install dependencies
         run: |
-          apt-get install -y chromium-browser
+          apt-get install -y sudo
+          sudo apt-get install -y chromium-browser
           pip install -r requirements.txt
       - name: Run tests
         run: |
