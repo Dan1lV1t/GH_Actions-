@@ -15,7 +15,7 @@ jobs:
         with:
           python-version: "3.10"
       - name: Install Chrome
-        run: |
+        run:
           Invoke-WebRequest -Uri 'https://dl.google.com/chrome/install/latest/chrome_installer.exe' -OutFile '$env:TEMP\chrome_installer.exe' -UseBasicParsing
           Start-Process -FilePath '$env:TEMP\chrome_installer.exe' -ArgumentList '/install', '/silent', '/close-when-done' -NoNewWindow -Wait
       - name: install dependencies
