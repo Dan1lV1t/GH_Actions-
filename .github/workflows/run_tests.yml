@@ -1,7 +1,13 @@
 name: Automated tests
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+    inputs:
+      deployment_target:
+        description: Choose target
+        required: True
+        default:
+        type: choice
 
 jobs:
   test:
