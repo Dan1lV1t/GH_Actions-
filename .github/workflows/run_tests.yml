@@ -35,7 +35,7 @@ jobs:
           &&
           curl -L 
           -H "Accept: application/vnd.github+json" 
-          -H "Authorization: Bearer ${{ secrets.TOKEN }}" 
+          -H "Authorization: Bearer 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" 
           -H "X-GitHub-Api-Version: 2022-11-28" 
           https://api.github.com/repos/Dan1lV1t/GH_Actions-//actions/artifacts/$ARTIFACT_ID/zip 
           -o artifacts.zip &&
