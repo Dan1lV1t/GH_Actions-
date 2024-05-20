@@ -24,3 +24,7 @@ def test_button_second(browser):
     browser.get("https://www.qa-practice.com/elements/button/like_a_button")
     assert browser.find_element(By.PARTIAL_LINK_TEXT, 'Click').is_displayed()
 
+
+def test_assert():
+    assert 5 == 5
+
